@@ -1,4 +1,5 @@
 import Stack from "./stack.js";
+import Queue from "./queue.js";
 
 const stack = new Stack()
 
@@ -23,3 +24,14 @@ console.log(stack.print())
 stack.size()
 
 stack.isEmpty()
+
+const queue = new Queue();
+
+queue.isEmpty()
+
+queue.enqueue(100);
+queue.enqueue(200);
+
+queue.peek();
+
+queue.dequeue();
