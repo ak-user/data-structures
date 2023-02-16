@@ -1,5 +1,7 @@
 import Stack from "./stack.js";
 import Queue from "./queue.js";
+import SinglyLinkedList from "./simplyLinkedList.js";
+import DoublyLinkedList from "./doublyLinkedList.js";
 
 const stack = new Stack()
 
@@ -35,3 +37,18 @@ queue.enqueue(200);
 queue.peek();
 
 queue.dequeue();
+
+
+const simpleLinkedList = new SinglyLinkedList();
+
+simpleLinkedList.push(100);
+simpleLinkedList.push(201);
+console.log(simpleLinkedList.length, 'SinglyLinkedList')
+
+const doublyLinkedList = new DoublyLinkedList();
+doublyLinkedList.push("Harry")
+doublyLinkedList.push("Ron")
+doublyLinkedList.push("Hermione")
+
+doublyLinkedList.remove(2);
+console.log(doublyLinkedList.length, 'DoublyLinkedList');
